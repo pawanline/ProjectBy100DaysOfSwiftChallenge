@@ -28,6 +28,29 @@ class ViewController: UITableViewController {
             }
         }
         
+      // sorting method 1
+        
+        //self.pictures = pictures.sorted()
+      
+          // sorting method 2
+//        self.pictures = pictures.sorted(by: { (item1, item2) -> Bool in
+//            return item1.compare(item2) == ComparisonResult.orderedAscending
+//        })
+        
+          // sorting method 3
+        // self.pictures = pictures.sorted(by: <)
+        
+        // sorting method 4
+     // _ = pictures.sort{ $0.localizedCaseInsensitiveCompare($1) == ComparisonResult.orderedAscending }
+        
+        
+        // sorting method 5
+        
+//        _ = pictures.sort(by: { (item1, item2) -> Bool in
+//            return item1.localizedCaseInsensitiveCompare(item2) == ComparisonResult.orderedAscending
+//        })
+        
+      
         print(pictures)
     }
     
@@ -44,7 +67,8 @@ class ViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "Details") as? DetailViewController {
-            vc.selectedImage = pictures[indexPath.row]
+            vc.selectedImage = self.pictures[indexPath.row]
+            vc.pictures = self.pictures
             navigationController?.pushViewController(vc, animated: true)
         }
     }
