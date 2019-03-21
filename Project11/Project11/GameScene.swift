@@ -11,6 +11,8 @@ import SpriteKit
 class GameScene: SKScene, SKPhysicsContactDelegate {
     var scoreLabel: SKLabelNode!
     
+    var boxArray: [SKSpriteNode] = []
+    
     var score = 0 {
         didSet {
             scoreLabel.text = "Score : \(score)"
@@ -29,11 +31,20 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
     }
     
+    var ballLabel: SKLabelNode!
+    
+    var noOfBalls = 5 {
+        didSet {
+            ballLabel.text = "No of balls  : \(noOfBalls)"
+        }
+    }
+    
     override func didMove(to view: SKView) {
         let background = SKSpriteNode(imageNamed: "background")
         background.position = CGPoint(x: 512, y: 384)
         background.blendMode = .replace
         background.zPosition = -1
+        
         addChild(background)
         
         scoreLabel = SKLabelNode(fontNamed: "Chalkduster")
@@ -46,9 +57,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         editLabel = SKLabelNode(fontNamed: "Chalkduster")
         editLabel.text = "Edit"
         editLabel.horizontalAlignmentMode = .right
-        editLabel.position = CGPoint(x: 80, y: 700)
+        editLabel.position = CGPoint(x: 120, y: 700)
         
         addChild(editLabel)
+        
+        ballLabel = SKLabelNode(fontNamed: "Chalkduster")
+        ballLabel.text = "No of Balls: 5"
+        ballLabel.horizontalAlignmentMode = .center
+        ballLabel.position = CGPoint(x: 512, y: 700)
+        
+        addChild(ballLabel)
         
         physicsBody = SKPhysicsBody(edgeLoopFrom: frame)
         
@@ -81,20 +99,42 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 let box = SKSpriteNode(color: UIColor(red: CGFloat.random(in: 0...1), green: CGFloat.random(in: 0...1), blue: CGFloat.random(in: 0...1), alpha: 1.0), size: size)
                 box.zRotation = CGFloat.random(in: 0...3)
                 box.position = location
-                
+                boxArray.append(box)
                 box.physicsBody = SKPhysicsBody(rectangleOf: box.size)
                 box.physicsBody?.isDynamic = false
+                boxArray.append(box)
                 addChild(box)
             } else {
                 print("Create ball")
-                let ball = SKSpriteNode(imageNamed: "ballRed")
-                ball.physicsBody = SKPhysicsBody(circleOfRadius: ball.size.width / 2.0)
-                ball.physicsBody?.contactTestBitMask = ball.physicsBody?.contactTestBitMask ?? 0
-                ball.physicsBody?.restitution = 0.4
-                
-                ball.position = location
-                ball.name = "ball"
-                addChild(ball)
+                if noOfBalls == 0 {
+                    let alert = UIAlertController(title: "Ball Finished", message: "Play Again", preferredStyle: UIAlertController.Style.alert)
+                    let action = UIAlertAction(title: "Ok", style: .default) { [weak self] _ in
+                        self?.noOfBalls = 5
+                        self?.score = 0
+                    }
+                    alert.addAction(action)
+                    if let vc = self.scene?.view?.window?.rootViewController {
+                        vc.present(alert, animated: true, completion: nil)
+                    }
+                }
+                if location.y > 700 && noOfBalls > 0 {
+                    let image = ["ballBlue", "ballCyan", "ballGreen", "ballGrey", "ballPurple", "ballRed", "ballYellow"].randomElement()
+                    let ball = SKSpriteNode(imageNamed: image ?? "ballRed")
+                    ball.physicsBody = SKPhysicsBody(circleOfRadius: ball.size.width / 2.0)
+                    ball.physicsBody?.contactTestBitMask = (ball.physicsBody?.collisionBitMask)!
+                    ball.physicsBody?.restitution = 0.4
+                    
+                    ball.position = location
+                    ball.name = "ball"
+                    noOfBalls -= 1
+                    if noOfBalls == 0 {
+                        for box in boxArray {
+                            box.removeFromParent()
+                        }
+                        boxArray.removeAll()
+                    }
+                    addChild(ball)
+                }
             }
         }
     }
@@ -114,15 +154,23 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         if isGood {
             slotBase = SKSpriteNode(imageNamed: "slotBaseGood")
             slotGlow = SKSpriteNode(imageNamed: "slotGlowGood")
-            slotGlow.name = "good"
+            slotBase.name = "good"
         } else {
             slotBase = SKSpriteNode(imageNamed: "slotBaseBad")
             slotGlow = SKSpriteNode(imageNamed: "slotGlowBad")
-            slotGlow.name = "bad"
+            slotBase.name = "bad"
         }
         
         slotBase.physicsBody = SKPhysicsBody(rectangleOf: slotBase.size)
         slotBase.physicsBody?.isDynamic = false
+        
+        if let rainParticles = SKEmitterNode(fileNamed: "Rain") {
+            rainParticles.particleColor = UIColor(red: CGFloat.random(in: 0...1), green: CGFloat.random(in: 0.0...1), blue: CGFloat.random(in: 0.0...1), alpha: 1.0)
+            rainParticles.particleColorBlendFactor = 1.0
+            rainParticles.particleColorSequence = nil
+            rainParticles.position = position
+            addChild(rainParticles)
+        }
         
         slotBase.position = position
         slotGlow.position = position
@@ -140,13 +188,21 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         if object.name == "good" {
             destroy(ball: ball)
             score += 1
+            noOfBalls += 1
+            object.removeFromParent()
         } else if object.name == "bad" {
             destroy(ball: ball)
             score -= 1
+            object.removeFromParent()
         }
     }
     
     func destroy(ball: SKNode) {
+        if let fireParticles = SKEmitterNode(fileNamed: "FireParticles") {
+            fireParticles.particleColor = UIColor(red: CGFloat.random(in: 0.5...1), green: CGFloat.random(in: 0.5...1), blue: CGFloat.random(in: 0.5...1), alpha: 1.0)
+            fireParticles.position = ball.position
+            addChild(fireParticles)
+        }
         ball.removeFromParent()
     }
     

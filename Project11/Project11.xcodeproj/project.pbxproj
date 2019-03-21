@@ -12,8 +12,17 @@
 		D45BA1E62240058700E163B4 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45BA1E52240058700E163B4 /* GameScene.swift */; };
 		D45BA1E82240058700E163B4 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45BA1E72240058700E163B4 /* GameViewController.swift */; };
 		D45BA1EB2240058700E163B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D45BA1E92240058700E163B4 /* Main.storyboard */; };
-		D45BA1ED2240058800E163B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D45BA1EC2240058800E163B4 /* Assets.xcassets */; };
 		D45BA1F02240058800E163B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D45BA1EE2240058800E163B4 /* LaunchScreen.storyboard */; };
+		D4D7861D22442DB800C1A8BA /* FireParticles.sks in Resources */ = {isa = PBXBuildFile; fileRef = D4D7861C22442DB800C1A8BA /* FireParticles.sks */; };
+		D4D7861F2244301800C1A8BA /* Rain.sks in Resources */ = {isa = PBXBuildFile; fileRef = D4D7861E2244301800C1A8BA /* Rain.sks */; };
+		D4D7862422443CA600C1A8BA /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = D4D7862222443CA600C1A8BA /* MyParticle.sks */; };
+		D4D7862522443CA600C1A8BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4D7862322443CA600C1A8BA /* Assets.xcassets */; };
+		D4D7862722443CCC00C1A8BA /* FireFlies.sks in Resources */ = {isa = PBXBuildFile; fileRef = D4D7862622443CCC00C1A8BA /* FireFlies.sks */; };
+		D4D7862922443CDD00C1A8BA /* Magic.sks in Resources */ = {isa = PBXBuildFile; fileRef = D4D7862822443CDD00C1A8BA /* Magic.sks */; };
+		D4D7862C22443CF200C1A8BA /* Smoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = D4D7862A22443CF200C1A8BA /* Smoke.sks */; };
+		D4D7862D22443CF200C1A8BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4D7862B22443CF200C1A8BA /* Assets.xcassets */; };
+		D4D7862F22443D0400C1A8BA /* snow.sks in Resources */ = {isa = PBXBuildFile; fileRef = D4D7862E22443D0400C1A8BA /* snow.sks */; };
+		D4D7863122443D1800C1A8BA /* spark.sks in Resources */ = {isa = PBXBuildFile; fileRef = D4D7863022443D1800C1A8BA /* spark.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,9 +32,18 @@
 		D45BA1E52240058700E163B4 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		D45BA1E72240058700E163B4 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		D45BA1EA2240058700E163B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D45BA1EC2240058800E163B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D45BA1EF2240058800E163B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D45BA1F12240058800E163B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4D7861C22442DB800C1A8BA /* FireParticles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FireParticles.sks; sourceTree = "<group>"; };
+		D4D7861E2244301800C1A8BA /* Rain.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Rain.sks; sourceTree = "<group>"; };
+		D4D7862222443CA600C1A8BA /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
+		D4D7862322443CA600C1A8BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D4D7862622443CCC00C1A8BA /* FireFlies.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FireFlies.sks; sourceTree = "<group>"; };
+		D4D7862822443CDD00C1A8BA /* Magic.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Magic.sks; sourceTree = "<group>"; };
+		D4D7862A22443CF200C1A8BA /* Smoke.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Smoke.sks; sourceTree = "<group>"; };
+		D4D7862B22443CF200C1A8BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D4D7862E22443D0400C1A8BA /* snow.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = snow.sks; sourceTree = "<group>"; };
+		D4D7863022443D1800C1A8BA /* spark.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = spark.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +60,10 @@
 		D45BA1D32240058600E163B4 = {
 			isa = PBXGroup;
 			children = (
+				D4D7862E22443D0400C1A8BA /* snow.sks */,
+				D4D7863022443D1800C1A8BA /* spark.sks */,
+				D4D7862A22443CF200C1A8BA /* Smoke.sks */,
+				D4D7862B22443CF200C1A8BA /* Assets.xcassets */,
 				D45BA1DE2240058700E163B4 /* Project11 */,
 				D45BA1DD2240058700E163B4 /* Products */,
 			);
@@ -61,9 +83,14 @@
 				D45BA1DF2240058700E163B4 /* AppDelegate.swift */,
 				D45BA1E12240058700E163B4 /* GameScene.sks */,
 				D45BA1E52240058700E163B4 /* GameScene.swift */,
+				D4D7862222443CA600C1A8BA /* MyParticle.sks */,
+				D4D7862622443CCC00C1A8BA /* FireFlies.sks */,
+				D4D7862822443CDD00C1A8BA /* Magic.sks */,
+				D4D7862322443CA600C1A8BA /* Assets.xcassets */,
 				D45BA1E72240058700E163B4 /* GameViewController.swift */,
 				D45BA1E92240058700E163B4 /* Main.storyboard */,
-				D45BA1EC2240058800E163B4 /* Assets.xcassets */,
+				D4D7861C22442DB800C1A8BA /* FireParticles.sks */,
+				D4D7861E2244301800C1A8BA /* Rain.sks */,
 				D45BA1EE2240058800E163B4 /* LaunchScreen.storyboard */,
 				D45BA1F12240058800E163B4 /* Info.plist */,
 			);
@@ -129,8 +156,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				D45BA1EB2240058700E163B4 /* Main.storyboard in Resources */,
+				D4D7862422443CA600C1A8BA /* MyParticle.sks in Resources */,
+				D4D7862F22443D0400C1A8BA /* snow.sks in Resources */,
+				D4D7862D22443CF200C1A8BA /* Assets.xcassets in Resources */,
 				D45BA1E22240058700E163B4 /* GameScene.sks in Resources */,
-				D45BA1ED2240058800E163B4 /* Assets.xcassets in Resources */,
+				D4D7862C22443CF200C1A8BA /* Smoke.sks in Resources */,
+				D4D7861D22442DB800C1A8BA /* FireParticles.sks in Resources */,
+				D4D7863122443D1800C1A8BA /* spark.sks in Resources */,
+				D4D7862522443CA600C1A8BA /* Assets.xcassets in Resources */,
+				D4D7862722443CCC00C1A8BA /* FireFlies.sks in Resources */,
+				D4D7861F2244301800C1A8BA /* Rain.sks in Resources */,
+				D4D7862922443CDD00C1A8BA /* Magic.sks in Resources */,
 				D45BA1F02240058800E163B4 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
