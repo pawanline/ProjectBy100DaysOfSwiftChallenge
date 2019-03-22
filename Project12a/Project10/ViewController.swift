@@ -16,6 +16,14 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
         super.viewDidLoad()
        
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addNewPerson))
+        
+        let defaults = UserDefaults.standard
+        
+        if let savedPeople = defaults.object(forKey: "people") as? Data {
+            if let decodePeople = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(savedPeople) as? [Person] {
+                self.people = decodePeople ?? [Person]()
+            }
+        }
     }
 
     
@@ -79,6 +87,7 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
         
         let person = Person(name: "Unknown", image: imageName)
         self.people.append(person)
+        self.save()
         self.collectionView.reloadData()
         
         dismiss(animated: true)
@@ -99,11 +108,21 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
                 return
             }
             person.name = newName
+            self?.save()
             self?.collectionView.reloadData()
         })
         
         ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
         present(ac,animated: true)
+    }
+    
+    
+    func save() {
+        if let savedData = try? NSKeyedArchiver.archivedData(withRootObject: people, requiringSecureCoding: false) {
+            let defauls = UserDefaults.standard
+            defauls.set(savedData, forKey: "people")
+            
+        }
     }
 }
 
