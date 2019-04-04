@@ -24,12 +24,26 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Krb-de-FPa"/>
                                 </connections>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMa-Eq-nsc">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="DlL-mB-JLi"/>
+                                </constraints>
+                                <state key="normal" title="Select Map Type"/>
+                                <connections>
+                                    <action selector="mapTypeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GXB-E6-J9K"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zMa-Eq-nsc" secondAttribute="trailing" id="0YN-XC-TfI"/>
                             <constraint firstItem="OfZ-h4-UQg" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="2bA-Co-Hei"/>
+                            <constraint firstItem="zMa-Eq-nsc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5hH-H6-UvW"/>
                             <constraint firstItem="OfZ-h4-UQg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="YH0-aM-7qk"/>
                             <constraint firstItem="OfZ-h4-UQg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dBl-Dd-ME8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zMa-Eq-nsc" secondAttribute="bottom" id="wbG-Gb-wSP"/>
                             <constraint firstItem="OfZ-h4-UQg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wkj-Fo-84C"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
