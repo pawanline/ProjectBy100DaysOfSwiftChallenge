@@ -23,6 +23,8 @@ class GameScene: SKScene ,SKPhysicsContactDelegate{
     var possibleEnemies = ["ball", "hammer", "tv"]
     var isGameOver = false
     var gameTimer: Timer?
+    var timeInterval : Double = 1
+      var count = 0
     
     override func didMove(to view: SKView) {
         backgroundColor = .black
@@ -54,7 +56,7 @@ class GameScene: SKScene ,SKPhysicsContactDelegate{
         physicsWorld.contactDelegate = self
         
         
-        gameTimer = Timer.scheduledTimer(timeInterval: 0.35, target: self, selector: #selector(createEnemy), userInfo: nil, repeats: true)
+        gameTimer = Timer.scheduledTimer(timeInterval: timeInterval, target: self, selector: #selector(createEnemy), userInfo: nil, repeats: true)
       
     }
     
@@ -88,9 +90,17 @@ class GameScene: SKScene ,SKPhysicsContactDelegate{
     }
     
     
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.isGameOver = true
+        
+    }
+    
+    
     func didBegin(_ contact: SKPhysicsContact) {
         let explosion = SKEmitterNode(fileNamed: "explosion")!
         explosion.position = player.position
+        explosion.particlePositionRange = CGVector(dx: 0.01, dy: 0.01)
+        explosion.numParticlesToEmit = 3
         addChild(explosion)
         
         player.removeFromParent()
@@ -99,14 +109,31 @@ class GameScene: SKScene ,SKPhysicsContactDelegate{
     }
     
     override func update(_ currentTime: TimeInterval) {
+      
         for node in children {
-            if node.position.x < -300 {
+            print("node position is \(node.position.x)")
+            if node.position.x < -100 {
+             print("node position is removing")
+                count += 1
                 node.removeFromParent()
             }
         }
+        
+        if count >= 20 {
+            gameTimer?.invalidate()
+            gameTimer = Timer.scheduledTimer(timeInterval: timeInterval - 0.1, target: self, selector: #selector(createEnemy), userInfo: nil, repeats: true)
+            count = 0
+        }
+        
+        
         
         if !isGameOver {
             score += 1
         }
     }
+    
+    
+
+    
+    
 }

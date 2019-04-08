@@ -7,35 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D438CDB92256E24D009A311E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D438CDB82256E24D009A311E /* AppDelegate.swift */; };
-		D438CDBB2256E24D009A311E /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D438CDBA2256E24D009A311E /* GameScene.sks */; };
-		D438CDBF2256E24D009A311E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D438CDBE2256E24D009A311E /* GameScene.swift */; };
-		D438CDC12256E24D009A311E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D438CDC02256E24D009A311E /* GameViewController.swift */; };
-		D438CDC42256E24D009A311E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D438CDC22256E24D009A311E /* Main.storyboard */; };
-		D438CDC62256E24E009A311E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D438CDC52256E24E009A311E /* Assets.xcassets */; };
-		D438CDC92256E24E009A311E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D438CDC72256E24E009A311E /* LaunchScreen.storyboard */; };
-		D438CDEC2256E629009A311E /* Starfield.sks in Resources */ = {isa = PBXBuildFile; fileRef = D438CDEA2256E629009A311E /* Starfield.sks */; };
-		D438CDF02256E7F5009A311E /* explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = D438CDEE2256E7F5009A311E /* explosion.sks */; };
-		D438CDF12256E7F5009A311E /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = D438CDEF2256E7F5009A311E /* Contents.json */; };
+		D4908B96225AF05F004384C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4908B95225AF05F004384C3 /* AppDelegate.swift */; };
+		D4908B98225AF05F004384C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4908B97225AF05F004384C3 /* ViewController.swift */; };
+		D4908B9B225AF05F004384C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4908B99225AF05F004384C3 /* Main.storyboard */; };
+		D4908B9D225AF061004384C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4908B9C225AF061004384C3 /* Assets.xcassets */; };
+		D4908BA0225AF061004384C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4908B9E225AF061004384C3 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D438CDB52256E24D009A311E /* Project17.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project17.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D438CDB82256E24D009A311E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D438CDBA2256E24D009A311E /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		D438CDBE2256E24D009A311E /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		D438CDC02256E24D009A311E /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		D438CDC32256E24D009A311E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D438CDC52256E24E009A311E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D438CDC82256E24E009A311E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D438CDCA2256E24E009A311E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D438CDEA2256E629009A311E /* Starfield.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Starfield.sks; sourceTree = "<group>"; };
-		D438CDEE2256E7F5009A311E /* explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = explosion.sks; sourceTree = "<group>"; };
-		D438CDEF2256E7F5009A311E /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		D4908B92225AF05F004384C3 /* Project18.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project18.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4908B95225AF05F004384C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D4908B97225AF05F004384C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D4908B9A225AF05F004384C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D4908B9C225AF061004384C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D4908B9F225AF061004384C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D4908BA1225AF061004384C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D438CDB22256E24D009A311E /* Frameworks */ = {
+		D4908B8F225AF05F004384C3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,94 +35,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D438CDAC2256E24D009A311E = {
+		D4908B89225AF05F004384C3 = {
 			isa = PBXGroup;
 			children = (
-				D438CDB72256E24D009A311E /* Project17 */,
-				D438CDB62256E24D009A311E /* Products */,
+				D4908B94225AF05F004384C3 /* Project18 */,
+				D4908B93225AF05F004384C3 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D438CDB62256E24D009A311E /* Products */ = {
+		D4908B93225AF05F004384C3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D438CDB52256E24D009A311E /* Project17.app */,
+				D4908B92225AF05F004384C3 /* Project18.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D438CDB72256E24D009A311E /* Project17 */ = {
+		D4908B94225AF05F004384C3 /* Project18 */ = {
 			isa = PBXGroup;
 			children = (
-				D438CDB82256E24D009A311E /* AppDelegate.swift */,
-				D438CDBA2256E24D009A311E /* GameScene.sks */,
-				D438CDBE2256E24D009A311E /* GameScene.swift */,
-				D438CDC02256E24D009A311E /* GameViewController.swift */,
-				D438CDC22256E24D009A311E /* Main.storyboard */,
-				D438CDC52256E24E009A311E /* Assets.xcassets */,
-				D438CDED2256E7F5009A311E /* explosion.dataset */,
-				D438CDE82256E629009A311E /* Starfield.dataset */,
-				D438CDC72256E24E009A311E /* LaunchScreen.storyboard */,
-				D438CDCA2256E24E009A311E /* Info.plist */,
+				D4908B95225AF05F004384C3 /* AppDelegate.swift */,
+				D4908B97225AF05F004384C3 /* ViewController.swift */,
+				D4908B99225AF05F004384C3 /* Main.storyboard */,
+				D4908B9C225AF061004384C3 /* Assets.xcassets */,
+				D4908B9E225AF061004384C3 /* LaunchScreen.storyboard */,
+				D4908BA1225AF061004384C3 /* Info.plist */,
 			);
-			path = Project17;
-			sourceTree = "<group>";
-		};
-		D438CDE82256E629009A311E /* Starfield.dataset */ = {
-			isa = PBXGroup;
-			children = (
-				D438CDEA2256E629009A311E /* Starfield.sks */,
-			);
-			name = Starfield.dataset;
-			path = Assets.xcassets/Starfield.dataset;
-			sourceTree = "<group>";
-		};
-		D438CDED2256E7F5009A311E /* explosion.dataset */ = {
-			isa = PBXGroup;
-			children = (
-				D438CDEE2256E7F5009A311E /* explosion.sks */,
-				D438CDEF2256E7F5009A311E /* Contents.json */,
-			);
-			name = explosion.dataset;
-			path = Assets.xcassets/explosion.dataset;
+			path = Project18;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D438CDB42256E24D009A311E /* Project17 */ = {
+		D4908B91225AF05F004384C3 /* Project18 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D438CDCD2256E24E009A311E /* Build configuration list for PBXNativeTarget "Project17" */;
+			buildConfigurationList = D4908BA4225AF061004384C3 /* Build configuration list for PBXNativeTarget "Project18" */;
 			buildPhases = (
-				D438CDB12256E24D009A311E /* Sources */,
-				D438CDB22256E24D009A311E /* Frameworks */,
-				D438CDB32256E24D009A311E /* Resources */,
+				D4908B8E225AF05F004384C3 /* Sources */,
+				D4908B8F225AF05F004384C3 /* Frameworks */,
+				D4908B90225AF05F004384C3 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Project17;
-			productName = Project17;
-			productReference = D438CDB52256E24D009A311E /* Project17.app */;
+			name = Project18;
+			productName = Project18;
+			productReference = D4908B92225AF05F004384C3 /* Project18.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D438CDAD2256E24D009A311E /* Project object */ = {
+		D4908B8A225AF05F004384C3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "PawanShivHari inc";
 				TargetAttributes = {
-					D438CDB42256E24D009A311E = {
+					D4908B91225AF05F004384C3 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
-			buildConfigurationList = D438CDB02256E24D009A311E /* Build configuration list for PBXProject "Project17" */;
+			buildConfigurationList = D4908B8D225AF05F004384C3 /* Build configuration list for PBXProject "Project18" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -140,59 +107,54 @@
 				en,
 				Base,
 			);
-			mainGroup = D438CDAC2256E24D009A311E;
-			productRefGroup = D438CDB62256E24D009A311E /* Products */;
+			mainGroup = D4908B89225AF05F004384C3;
+			productRefGroup = D4908B93225AF05F004384C3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D438CDB42256E24D009A311E /* Project17 */,
+				D4908B91225AF05F004384C3 /* Project18 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D438CDB32256E24D009A311E /* Resources */ = {
+		D4908B90225AF05F004384C3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D438CDEC2256E629009A311E /* Starfield.sks in Resources */,
-				D438CDC42256E24D009A311E /* Main.storyboard in Resources */,
-				D438CDF12256E7F5009A311E /* Contents.json in Resources */,
-				D438CDBB2256E24D009A311E /* GameScene.sks in Resources */,
-				D438CDF02256E7F5009A311E /* explosion.sks in Resources */,
-				D438CDC62256E24E009A311E /* Assets.xcassets in Resources */,
-				D438CDC92256E24E009A311E /* LaunchScreen.storyboard in Resources */,
+				D4908BA0225AF061004384C3 /* LaunchScreen.storyboard in Resources */,
+				D4908B9D225AF061004384C3 /* Assets.xcassets in Resources */,
+				D4908B9B225AF05F004384C3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D438CDB12256E24D009A311E /* Sources */ = {
+		D4908B8E225AF05F004384C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D438CDBF2256E24D009A311E /* GameScene.swift in Sources */,
-				D438CDC12256E24D009A311E /* GameViewController.swift in Sources */,
-				D438CDB92256E24D009A311E /* AppDelegate.swift in Sources */,
+				D4908B98225AF05F004384C3 /* ViewController.swift in Sources */,
+				D4908B96225AF05F004384C3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D438CDC22256E24D009A311E /* Main.storyboard */ = {
+		D4908B99225AF05F004384C3 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D438CDC32256E24D009A311E /* Base */,
+				D4908B9A225AF05F004384C3 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		D438CDC72256E24E009A311E /* LaunchScreen.storyboard */ = {
+		D4908B9E225AF061004384C3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D438CDC82256E24E009A311E /* Base */,
+				D4908B9F225AF061004384C3 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -200,7 +162,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		D438CDCB2256E24E009A311E /* Debug */ = {
+		D4908BA2225AF061004384C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -261,7 +223,7 @@
 			};
 			name = Debug;
 		};
-		D438CDCC2256E24E009A311E /* Release */ = {
+		D4908BA3225AF061004384C3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -316,64 +278,64 @@
 			};
 			name = Release;
 		};
-		D438CDCE2256E24E009A311E /* Debug */ = {
+		D4908BA5225AF061004384C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8NP76R759R;
-				INFOPLIST_FILE = Project17/Info.plist;
+				INFOPLIST_FILE = Project18/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pawanshivhari.Project17;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pawanshivhari.Project18;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		D438CDCF2256E24E009A311E /* Release */ = {
+		D4908BA6225AF061004384C3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8NP76R759R;
-				INFOPLIST_FILE = Project17/Info.plist;
+				INFOPLIST_FILE = Project18/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pawanshivhari.Project17;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pawanshivhari.Project18;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D438CDB02256E24D009A311E /* Build configuration list for PBXProject "Project17" */ = {
+		D4908B8D225AF05F004384C3 /* Build configuration list for PBXProject "Project18" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D438CDCB2256E24E009A311E /* Debug */,
-				D438CDCC2256E24E009A311E /* Release */,
+				D4908BA2225AF061004384C3 /* Debug */,
+				D4908BA3225AF061004384C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D438CDCD2256E24E009A311E /* Build configuration list for PBXNativeTarget "Project17" */ = {
+		D4908BA4225AF061004384C3 /* Build configuration list for PBXNativeTarget "Project18" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D438CDCE2256E24E009A311E /* Debug */,
-				D438CDCF2256E24E009A311E /* Release */,
+				D4908BA5225AF061004384C3 /* Debug */,
+				D4908BA6225AF061004384C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D438CDAD2256E24D009A311E /* Project object */;
+	rootObject = D4908B8A225AF05F004384C3 /* Project object */;
 }
